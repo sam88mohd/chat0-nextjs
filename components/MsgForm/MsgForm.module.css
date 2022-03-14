@@ -1,0 +1,22 @@
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.form input,
+.form button {
+  padding: 6px 10px;
+}
+
+.form input {
+  flex-grow: 1;
+}
+
+.form button {
+  background-color: rgb(49, 49, 226);
+  border: none;
+  color: azure;
+  font-weight: 700;
+}
