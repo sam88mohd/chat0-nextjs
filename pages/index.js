@@ -1,25 +1,15 @@
-import Head from "next/head";
-import BoxContent from "../components/BoxContent";
-import BoxHeader from "../components/BoxHeader";
-import MsgForm from "../components/MsgForm";
-import style from "../styles/Home.module.css";
+import React from "react";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
-      <Head>
-        <title>Chat App</title>
-        <meta name="description" content="Chat App" />
-      </Head>
-      <main className={style.main}>
-        <div className={style.container}>
-          <div className={style.chatBox}>
-            <BoxHeader />
-            <BoxContent />
-            <MsgForm />
-          </div>
-        </div>
-      </main>
+      <form>
+        <input type="text" placeholder="Enter your name..." />
+        <input type="text" placeholder="Enter chat name..." />
+        <button type="submit">Create Chat Room</button>
+      </form>
     </div>
   );
-}
+};
+
+export default Home;
